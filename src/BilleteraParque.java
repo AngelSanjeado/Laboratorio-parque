@@ -11,7 +11,7 @@ public class BilleteraParque {
     }
 
     public void agregarTickets(int tickets){
-        if (tickets < 0){
+        if (tickets > 0){
             this.tickets += tickets;
         }
 
@@ -19,7 +19,7 @@ public class BilleteraParque {
     }
 
     public boolean removerTickets(int tickets){
-        if (tickets < 0 && tickets <= getTickets()){
+        if (tickets > 0 && getTickets() > tickets){
            this.tickets -= tickets;
            return true;
         }
@@ -50,4 +50,5 @@ public class BilleteraParque {
     public String mostrarMenu(){
         return String.format("1. %s \n 2. %s \n 3. %s \n 4. %s \n 5. %s", "Agregar tickets", "Establecer tickets", "Comprar premios", "Establecer festivo", "Salir");
     }
+
 }
