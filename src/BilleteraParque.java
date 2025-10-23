@@ -19,7 +19,7 @@ public class BilleteraParque {
     }
 
     public boolean removerTickets(int tickets){
-        if (tickets > 0 && getTickets() > tickets){
+        if (tickets > 0 && getTickets() >= tickets){
            this.tickets -= tickets;
            return true;
         }

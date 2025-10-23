@@ -104,7 +104,7 @@ public class Main {
                     break;
 
                 case 5:
-                    System.out.println("Saliendo del programa");
+                    System.out.println("Saliendo del programa...");
             }
 
         }while (opcion != 5);
